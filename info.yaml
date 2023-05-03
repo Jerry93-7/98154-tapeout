@@ -4,6 +4,7 @@ project:
     - toplevel_chip.v
     - chip.sv
     - decoder.v
+    - library.sv
   top_module:  "toplevel_chip"
 
 # As everyone will have access to all designs, try to make it easy for someone new to your design to know what
@@ -13,11 +14,15 @@ project:
 #
 # This info will be automatically collected and used to make a datasheet for the chip.
 documentation: 
-  author:       "PLACEHOLDER"      # Your name
-  discord:      ""      # Your discord handle
-  title:        "PLACEHOLDER"      # Project title
-  description:  "PLACEHOLDER"      # Short description of what your project does
-  how_it_works: "PLACEHOLDER"      # Longer description of how the project works
+  author:       "Jerry Feng"      # Your name
+  discord:      "Jerrythemouse#9319"      # Your discord handle
+  title:        "PRNG Chip"      # Project title
+  description:  "Chip takes an 8-bit seed number as input into the Chip 
+                 and outputs an 8-bit psuedo-random number on the output pins"      # Short description of what your project does
+  how_it_works: "Seeds number is fed as input into the flip-flops of either a Fibonacci or Galois Linear Shift Register, 
+                 8 shifts occur, where the output of one of the linear shift register's is stored in a SIPO shift register.
+                 The value of the SIPO shift register is then stored in a normal register, and then fed through an AES S-box
+                 to generate the final output."      # Longer description of how the project works
   how_to_test:  "PLACEHOLDER"      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   external_hw:  "PLACEHOLDER"      # Describe any external hardware needed
   language:     "verilog" # other examples include Verilog, Amaranth, VHDL, etc
@@ -25,20 +30,28 @@ documentation:
   clock_hz:     1000       # Clock frequency in Hz (if required)
   picture:      ""      # relative path to a picture in your repository
   inputs:               # a description of what the inputs do
-    - none
-    - none
-    - none
-    - none
-    - none
-    - none
-    - none
+    - Select bit to select Fibonacci (0) or Galois (1) Linear Shift Register
+    - Enable
+    - Reset
+    - Input bit 0
+    - Input bit 1
+    - Input bit 2
+    - Input bit 3
+    - Input bit 4
+    - Input bit 5
+    - Input bit 6
+    - Input bit 7
     - none
   outputs:
-    - none
-    - none
-    - none
-    - none
-    - none
+    - Valid
+    - Output bit 0
+    - Output bit 1
+    - Output bit 2
+    - Output bit 3
+    - Output bit 4
+    - Output bit 5
+    - Output bit 6
+    - Output bit 7
     - none
     - none
     - none
