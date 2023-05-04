@@ -17,32 +17,32 @@ embed them in markdown:
 ## Inputs/Outputs
 My chip does not have a dependency on any certain clock frequency.
 
- inputs:               # a description of what the inputs do
-    - Select bit to select Fibonacci (0) or Galois (1) Linear Shift Register
-    - Enable
-    - Reset
-    - Input bit 0
-    - Input bit 1
-    - Input bit 2
-    - Input bit 3
-    - Input bit 4
-    - Input bit 5
-    - Input bit 6
-    - Input bit 7
-    - none
-  outputs:
-    - Valid
-    - Output bit 0
-    - Output bit 1
-    - Output bit 2
-    - Output bit 3
-    - Output bit 4
-    - Output bit 5
-    - Output bit 6
-    - Output bit 7
-    - none
-    - none
-    - none
+       inputs:               # a description of what the inputs do
+          - Select bit to select Fibonacci (0) or Galois (1) Linear Shift Register
+          - Enable
+          - Reset
+          - Input bit 0
+          - Input bit 1
+          - Input bit 2
+          - Input bit 3
+          - Input bit 4
+          - Input bit 5
+          - Input bit 6
+          - Input bit 7
+          - none
+        outputs:
+          - Valid
+          - Output bit 0
+          - Output bit 1
+          - Output bit 2
+          - Output bit 3
+          - Output bit 4
+          - Output bit 5
+          - Output bit 6
+          - Output bit 7
+          - none
+          - none
+          - none
     
 
 ## Design Testing / Bringup
