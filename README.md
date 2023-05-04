@@ -70,10 +70,10 @@ Step clock until you see valid pin go high, then the output random number will b
 ![Galois Testbench](media/testbench_output_gal.PNG)
 
 Block Diagram:
-![Block Diagram](media/98154_block_diagram.PNG)
+![Block Diagram](media/98154_block_diagram.jpg)
 
 FSM Diagram:
-![FSM Diagram](media/98154_FSM.PNG)
+![FSM Diagram](media/98154_FSM.jpg)
 
 ## Miscellaneous (anything else)
 
