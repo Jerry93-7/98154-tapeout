@@ -77,6 +77,7 @@ Step clock until you see valid pin go high, then the output random number will b
 
 
 ## Miscellaneous (anything else)
+I do not plan on resubmitting between May 5th and May 9th 
 
 Contact: 
 
