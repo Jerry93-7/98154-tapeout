@@ -195,7 +195,7 @@ module Counter
    output logic [WIDTH-1:0] Q);
    
    logic iterator;
-   always_ff @(posedge clock, negedge clear)
+  always_ff @(posedge clock, posedge clear)
      if (clear) begin
        Q <= {WIDTH {1'b0}};
      end
