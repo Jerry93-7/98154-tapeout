@@ -109,7 +109,7 @@ module Adder
    output logic [WIDTH-1:0] sum);
 
   always_comb begin
-    assign {cout, sum} = A + B + cin;
+    {cout, sum} = A + B + cin;
   end
 
 endmodule: Adder
