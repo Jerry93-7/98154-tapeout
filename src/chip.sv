@@ -175,7 +175,7 @@ module fibo_lsfr
 
     logic feedback;
 
-    always_ff @(posedge clk) begin
+    always_ff @(posedge clk, posedge reset) begin
 
         if(reset)
             state_out <= 8'b0;
