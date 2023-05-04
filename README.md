@@ -10,7 +10,6 @@ Seeds number is fed as input into the flip-flops of either a Fibonacci or Galois
 8 shifts occur, where the output of one of the linear shift register's is stored in a SIPO shift register.
 The value of the SIPO shift register is then stored in a normal register, and then fed through an AES S-box to generate the final output.
 This is a datapath, which is controlled by a Mealy machine FSM.
-
 Block Diagram:
 ![Block Diagram](media/98154_block_diagram.PNG)
 
