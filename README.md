@@ -84,3 +84,6 @@ Contact:
 
   - Email: jerryfen@andrew.cmu.edu
 
+## Acknowledgements
+A big thanks to Anish Singhani and Professor Nace for all their hardwork in putting together this course and giving me this cool opportunity!
+An additional thanks to Anish Singhani for all the debugging help!
