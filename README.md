@@ -17,7 +17,7 @@ embed them in markdown:
 ## Inputs/Outputs
 My chip does not have a dependency on any certain clock frequency.
 
-       inputs:               # a description of what the inputs do
+       inputs:
           - Select bit to select Fibonacci (0) or Galois (1) Linear Shift Register
           - Enable
           - Reset
