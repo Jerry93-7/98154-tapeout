@@ -1,6 +1,17 @@
 `default_nettype none
 
 module my_chip (
+    input logic [11:0] io_in, // Inputs to your chip
+    output logic [11:0] io_out, // Outputs from your chip
+    input logic clock,
+    input logic reset // Important: Reset is ACTIVE-HIGH
+);
+    
+    prng_chip prng_chip_one (.reset(reset), .en(io_in[0]), .sel(io_in[1]), .clk(clock), .seed(io_in[9:2]), .valid(io_out[8]), .rand_num(io_out[7:0]));
+
+endmodule: my_chip
+
+module prng_chip (
     input logic reset, en, sel, clk,
     input logic [7:0] seed, 
     output logic valid,
@@ -37,7 +48,7 @@ module my_chip (
     assign rand_num = AES_out_num;
 
 
-endmodule: my_chip
+endmodule: prng_chip
 
 module control_path
 (
