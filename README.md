@@ -64,10 +64,10 @@ Step clock until you see valid pin go high, then the output random number will b
 
 ## Media
 "Fibonacci mode" testbench output:
-![alt text](https://github.com/Jerry93-7/98154-tapeout/tree/main/media/media/testbench_output_fibo.PNG)
+![alt text](https://github.com/Jerry93-7/98154-tapeout/tree/main/media/media/testbench_output_fibo.png)
 
 "Galois mode" testbench output:
-![alt text](https://github.com/Jerry93-7/98154-tapeout/tree/main/media/media/testbench_output_gal.PNG)
+![alt text](https://github.com/Jerry93-7/98154-tapeout/tree/main/media/media/testbench_output_gal.png)
 
 ## Miscellaneous (anything else)
 
