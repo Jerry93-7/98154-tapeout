@@ -50,7 +50,8 @@ My chip does not have a dependency on any certain clock frequency.
 
 ## Design Testing / Bringup
 Set reset pin high for one positive clock edge.  
-Next positive clock edge set reset pin low, enable bit low, and set select and input pins to desired values. 
+Next positive clock edge set reset pin low, enable pin low, and set select and input pins to desired values.
+Following positive clock edge set enable pin high, then set enable pin low on the next clock edge.
 Step clock until you see valid pin go high, then the output random number will be the psuedo-random number generated.
                  
                  Sample Inputs and Outputs for Fibonacci mode (select = 0):
