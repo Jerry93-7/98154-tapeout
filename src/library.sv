@@ -203,7 +203,7 @@ module Counter
        Q <= D;
      end
      else if(en & ~load) begin
-       assign iterator = up ? 1 : -1;
+       iterator = up ? 1 : -1;
        Q <= Q + iterator; 
      end
 
