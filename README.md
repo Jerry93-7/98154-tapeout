@@ -10,10 +10,6 @@ Seeds number is fed as input into the flip-flops of either a Fibonacci or Galois
 8 shifts occur, where the output of one of the linear shift register's is stored in a SIPO shift register.
 The value of the SIPO shift register is then stored in a normal register, and then fed through an AES S-box to generate the final output.
 
-To add images, upload them into the repo and use the following format to
-embed them in markdown:
-![](image1.png)
-
 ## Inputs/Outputs
 My chip does not have a dependency on any certain clock frequency.
 
@@ -61,6 +57,13 @@ Step clock until you see valid pin go high, then the output random number will b
                  11001100 -> 10100001
                  00011000 -> 00100011
                  10101010 -> 00010010
+                 
+                 
+Schematic Diagram:
+![Fibonacci Testbench](media/testbench_output_fibo.PNG)
+
+FSM Diagram:
+![Fibonacci Testbench](media/testbench_output_fibo.PNG)
 
 ## Media
 "Fibonacci mode" testbench output:
