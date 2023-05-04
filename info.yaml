@@ -23,8 +23,27 @@ documentation:
                  8 shifts occur, where the output of one of the linear shift register's is stored in a SIPO shift register.
                  The value of the SIPO shift register is then stored in a normal register, and then fed through an AES S-box
                  to generate the final output."      # Longer description of how the project works
-  how_to_test:  "PLACEHOLDER"      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
-  external_hw:  "PLACEHOLDER"      # Describe any external hardware needed
+  how_to_test:  "Set reset pin high for one positive clock edge.  
+                 Next positive clock edge set reset pin low, enable bit low, and set select and input pins to desired values. 
+                 Step clock until you see valid pin go high, then the output random number will be the psuedo-random number generated.
+                 
+                 Sample Inputs and Outputs for Fibonacci mode (select = 0):
+                  Inputs       Outputs
+                 11001100 -> 10000011
+
+                 00011000 -> 10100011
+
+                 10101010 -> 00101011
+                 
+                 Sample Inputs and Outputs for Galois mode (select = 1):
+                  Inputs       Outputs
+                 11001100 -> 10100001
+
+                 00011000 -> 00100011
+
+                 10101010 -> 00010010"      
+                 # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
+  external_hw:  "None"      # Describe any external hardware needed
   language:     "verilog" # other examples include Verilog, Amaranth, VHDL, etc
   doc_link:     ""      # URL to longer form documentation, eg the README.md in your repository
   clock_hz:     1000       # Clock frequency in Hz (if required)
