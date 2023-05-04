@@ -1,7 +1,6 @@
 `default_nettype none
 
 module my_chip (
-    (
     input logic reset, en, sel, clk,
     input logic [7:0] seed, 
     output logic valid,
