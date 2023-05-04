@@ -23,7 +23,6 @@ My chip does not have a dependency on any certain clock frequency.
        inputs:
           - Select bit to select Fibonacci (0) or Galois (1) Linear Shift Register
           - Enable
-          - Reset
           - Input bit 0
           - Input bit 1
           - Input bit 2
@@ -33,8 +32,8 @@ My chip does not have a dependency on any certain clock frequency.
           - Input bit 6
           - Input bit 7
           - none
+          - none
         outputs:
-          - Valid
           - Output bit 0
           - Output bit 1
           - Output bit 2
@@ -43,6 +42,7 @@ My chip does not have a dependency on any certain clock frequency.
           - Output bit 5
           - Output bit 6
           - Output bit 7
+          - Valid
           - none
           - none
           - none
